@@ -2600,6 +2600,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Switch UI",
+            "id": "349c31a3-e287-4500-a159-e195c01ccba4",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "40dfaf56-77a7-454b-b000-5df5943cceab",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "807d9e42-c47c-42f4-9eef-60a1e9c95964",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
