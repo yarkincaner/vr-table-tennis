@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/TableTennisVR/Scenes/WaitingRoom.unity
     guid: 65f956d9e6496614d89c1e790387c8fb
   - enabled: 1
