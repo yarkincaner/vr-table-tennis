@@ -6,6 +6,7 @@ using Photon.Pun;
 public class PlayerNetworkSetup : MonoBehaviourPunCallbacks
 {
     public GameObject localXROriginGameObject;
+    //public GameObject localXRDeviceSimulator;
 
 
     // Start is called before the first frame update
@@ -15,12 +16,14 @@ public class PlayerNetworkSetup : MonoBehaviourPunCallbacks
         {
             //the player is local
             localXROriginGameObject.SetActive(true);
+            //localXRDeviceSimulator.SetActive(true);
         }
         else
         {
             //the player is remote 
             //If it is not local player, we will disable the XR origin gameobject under the generic VR player.
             localXROriginGameObject.SetActive(false);
+            //localXRDeviceSimulator.SetActive(false);
         }
     }
 
