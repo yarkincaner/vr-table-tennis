@@ -142,7 +142,7 @@ public class MultiplayerVRSynchronization : MonoBehaviour, IPunObservable
             mainAvatarTransform.localRotation = Quaternion.RotateTowards(mainAvatarTransform.localRotation, this.m_NetworkRotation_MainAvatar, this.m_Angle_MainAvatar * (1.0f / PhotonNetwork.SerializationRate));
 
 
-          
+
             headTransform.localRotation = Quaternion.RotateTowards(headTransform.localRotation, this.m_NetworkRotation_Head, this.m_Angle_Head * (1.0f / PhotonNetwork.SerializationRate));
 
             bodyTransform.localRotation = Quaternion.RotateTowards(bodyTransform.localRotation, this.m_NetworkRotation_Body, this.m_Angle_Body * (1.0f / PhotonNetwork.SerializationRate));
@@ -161,7 +161,7 @@ public class MultiplayerVRSynchronization : MonoBehaviour, IPunObservable
     {
         if (stream.IsWriting)
         {
-            ////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////
             //General VRPlayer Transform Synch
 
             //Send Main Avatar position data
@@ -175,7 +175,7 @@ public class MultiplayerVRSynchronization : MonoBehaviour, IPunObservable
             stream.SendNext(generalVRPlayerTransform.rotation);
 
 
-            ////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////
             //Main Avatar Transform Synch
 
             //Send Main Avatar position data
@@ -190,21 +190,21 @@ public class MultiplayerVRSynchronization : MonoBehaviour, IPunObservable
 
 
 
-            /////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////
             //Head rotation synch
 
             //Send Head rotation data
             stream.SendNext(headTransform.localRotation);
 
 
-            /////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////
             //Body rotation synch
 
             //Send Body rotation data
             stream.SendNext(bodyTransform.localRotation);
 
 
-            /////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////
             //Hands Transform Synch
             //Left Hand
             //Send Left Hand position data
@@ -231,7 +231,7 @@ public class MultiplayerVRSynchronization : MonoBehaviour, IPunObservable
         }
         else
         {
-            /////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////
             //Ganeral VR Player Transform Synch
 
             //Get VR Player position data
@@ -262,7 +262,7 @@ public class MultiplayerVRSynchronization : MonoBehaviour, IPunObservable
                 this.m_Angle_GeneralVRPlayer = Quaternion.Angle(generalVRPlayerTransform.rotation, this.m_NetworkRotation_GeneralVRPlayer);
             }
 
-            /////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////
             //Main Avatar Transform Synch
 
             //Get Main Avatar position data
@@ -294,7 +294,7 @@ public class MultiplayerVRSynchronization : MonoBehaviour, IPunObservable
             }
 
 
-            /////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////
             //Head rotation synch
             //Get Head rotation data 
             this.m_NetworkRotation_Head = (Quaternion)stream.ReceiveNext();
@@ -309,7 +309,7 @@ public class MultiplayerVRSynchronization : MonoBehaviour, IPunObservable
                 this.m_Angle_Head = Quaternion.Angle(headTransform.localRotation, this.m_NetworkRotation_Head);
             }
 
-            /////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////
             //Body rotation synch
             //Get Body rotation data 
             this.m_NetworkRotation_Body = (Quaternion)stream.ReceiveNext();
@@ -324,7 +324,7 @@ public class MultiplayerVRSynchronization : MonoBehaviour, IPunObservable
                 this.m_Angle_Body = Quaternion.Angle(bodyTransform.localRotation, this.m_NetworkRotation_Body);
             }
 
-            /////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////
             //Hands Transform Synch
             //Get Left Hand position data
             this.m_NetworkPosition_LeftHand = (Vector3)stream.ReceiveNext();
