@@ -1217,6 +1217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TennisRacket (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4892747151045057822, guid: 4a6dad6a5f8696547822687c779e415c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8184029065289384568, guid: 4a6dad6a5f8696547822687c779e415c, type: 3}
       propertyPath: sceneViewId
       value: 3
@@ -1383,6 +1387,10 @@ PrefabInstance:
     - target: {fileID: 4892747151045057822, guid: 4a6dad6a5f8696547822687c779e415c, type: 3}
       propertyPath: m_Name
       value: TennisRacket
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892747151045057822, guid: 4a6dad6a5f8696547822687c779e415c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8184029065289384568, guid: 4a6dad6a5f8696547822687c779e415c, type: 3}
       propertyPath: sceneViewId
