@@ -1723,6 +1723,7 @@ GameObject:
   - component: {fileID: 5860302446959345814}
   - component: {fileID: 703434294732222929}
   - component: {fileID: 5916088988096170162}
+  - component: {fileID: 9172871366280482121}
   m_Layer: 0
   m_Name: Generic VR Player
   m_TagString: Untagged
@@ -1801,6 +1802,18 @@ MonoBehaviour:
   bodyTransform: {fileID: 7658475767626503810}
   leftHandTransform: {fileID: 1989686200804205881}
   rightHandTransform: {fileID: 5644259017293402352}
+--- !u!114 &9172871366280482121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579759450355082478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126494ae2a10a34499272ed97a6c9f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3935843033122252370
 GameObject:
   m_ObjectHideFlags: 0
